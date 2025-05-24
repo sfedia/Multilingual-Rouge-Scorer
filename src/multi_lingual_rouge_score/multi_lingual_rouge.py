@@ -7,7 +7,7 @@ from rouge_score import scoring
 
 from transformers import BertTokenizer
 
-tokenizer = BertTokenizer.from_pretrained("bert-base-multilingual-uncased")
+tokenizer = BertTokenizer.from_pretrained("bert-base-multilingual-cased")
 
 class RougeScorer(scoring.BaseScorer):
     """Calculate rouges scores between two blobs of text.
